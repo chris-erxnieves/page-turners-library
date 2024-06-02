@@ -1,10 +1,10 @@
-package com.pageturnerslibrary.rentals;
+package com.pageturnerslibrary.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RentalsApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
