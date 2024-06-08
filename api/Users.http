@@ -1,0 +1,7 @@
+### Get All Users
+GET {{host}}/api/users
+Content-Type: application/json
+
+### Get User by Id
+GET {{host}}/api/users/1
+Content-Type: application/json
