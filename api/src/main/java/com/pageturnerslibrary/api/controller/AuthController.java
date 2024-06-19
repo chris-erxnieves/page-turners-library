@@ -16,8 +16,15 @@ public class AuthController {
         this.tokenService = tokenService;
     }
 
-    @PostMapping()
-    public String token(Authentication authentication) {
+    @PostMapping("/login")
+    public String login(Authentication authentication) {
         return tokenService.generateToken(authentication);
     }
+
+    // TODO: Add logout functionality
+    @PostMapping("/logout")
+    public String logout(Authentication authentication) {
+        return "";
+    }
+
 }

@@ -1,7 +1,7 @@
 # Test user with password
-@username = jdoe
-@password = password
+@username = user
+@password = pass
 
-### Generate an auth token
-POST {{host}}/api/auth
+### Login
+POST {{host}}/api/auth/login
 Authorization: Basic {{username}} {{password}}

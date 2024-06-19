@@ -1,5 +1,7 @@
 package com.pageturnerslibrary.api.dto;
 
+import com.pageturnerslibrary.api.enums.Role;
+
 public class UserDto {
 
     private Long id;
@@ -12,15 +14,18 @@ public class UserDto {
 
     private String password;
 
+    private Role role;
+
     public UserDto() {
     }
 
-    public UserDto(Long id, String firstName, String lastName, String username, String password) {
+    public UserDto(Long id, String firstName, String lastName, String username, String password, Role role) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.password = password;
+        this.role = role;
     }
 
     public Long getId() {
@@ -61,5 +66,13 @@ public class UserDto {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 }
